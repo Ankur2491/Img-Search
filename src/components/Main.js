@@ -24,7 +24,7 @@ export class Main extends React.Component {
     }
     searchImages = (event) => {
         if (event.target.value.length >= 3) {
-            axios.get(`https://imsea.herokuapp.com/api/1?q=${event.target.value}`)
+            axios.get(`http://35.224.154.91:3005/search/${event.target.value}`)
                 .then(result => {
                     console.log(result);
                 })
